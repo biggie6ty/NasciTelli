@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Estilo para ocupar a tela inteira com cor de fundo */
+body {
+    margin: 0; /* Remove as margens padrão do body */
+    padding: 0; /* Remove os paddings padrão do body */
+    background-color: rgba(240, 240, 240, 0.61); /* Define a cor de fundo */
+    height: 100vh; /* Garante que o body ocupe 100% da altura da tela */
+    display: flex; /* Habilita um layout flexível */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    
+    font-family:"Poppins", sans-serif;
+}
+
+/* Estilo para o container com margens laterais */
+.container {
+    background-color: #325340; /* Cor de fundo do container */
+    width: 80%; /* Define uma largura relativa */
+    max-width: 800px; /* Limita a largura máxima */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    padding: 20px; /* Adiciona espaçamento interno */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
+    color: white;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container {
+    margin-left: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas com tamanhos iguais */
+    gap: 60px; /* Espaçamento entre as imagens */
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+    width: 100%; /* Ocupa toda a largura da célula */
+    max-width: 200px; /* Tamanho máximo das imagens */
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Suaviza a animação */
+}
+
+.image-container img:hover {
+    transform: scale(1.2); /* Amplia a imagem */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Adiciona mais sombra para destacar */
+    z-index: 1; /* Garante que a imagem fique "acima" das outras */
+}
