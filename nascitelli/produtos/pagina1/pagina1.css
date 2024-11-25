@@ -2,29 +2,47 @@
 
 /* Estilo para ocupar a tela inteira com cor de fundo */
 body {
-    margin: 0; /* Remove as margens padrão do body */
-    padding: 0; /* Remove os paddings padrão do body */
-    background-color: rgba(240, 240, 240, 0.61); /* Define a cor de fundo */
-    height: 100vh; /* Garante que o body ocupe 100% da altura da tela */
-    display: flex; /* Habilita um layout flexível */
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    
+    margin: 0;
+    padding: 0;
+    background-color: rgba(240, 240, 240, 0.61);
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
     font-family:"Poppins", sans-serif;
 }
 
 /* Estilo para o container com margens laterais */
 .container {
-    background-color: #325340; /* Cor de fundo do container */
-    width: 80%; /* Define uma largura relativa */
-    max-width: 800px; /* Limita a largura máxima */
-    margin: 0 auto; /* Centraliza horizontalmente */
-    padding: 20px; /* Adiciona espaçamento interno */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
+    background-color: #325340;
+    width: 80%;
+    max-width: 75%;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.479);
     color: white;
 }
 
-.logo{
+.container button {
+    border: 0;
+    background-color:hsl(145, 65%, 27%);
+    color: white;
+    border-radius: 20px;
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 50px;
+}
+
+.container button:hover {
+    transform: scale(1.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.logo {
+    margin-bottom: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,24 +50,45 @@ body {
 
 .image-container {
     margin-left: 100px;
+    margin-right: 100px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 colunas com tamanhos iguais */
-    gap: 60px; /* Espaçamento entre as imagens */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
     justify-content: center;
     align-items: center;
 }
 
 .image-container img {
-    width: 100%; /* Ocupa toda a largura da célula */
-    max-width: 200px; /* Tamanho máximo das imagens */
+    width: 100%;
+    max-width: 200px;
     border: 2px solid #ccc;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Suaviza a animação */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.image-container img:hover {
-    transform: scale(1.2); /* Amplia a imagem */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Adiciona mais sombra para destacar */
-    z-index: 1; /* Garante que a imagem fique "acima" das outras */
+.produto {
+    display: inline-flex;
+    gap: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.produto:hover {
+    transform: scale(1.05);
+    z-index: 1;
+}
+
+.produto p {
+    font-size: small;
+}
+
+.produto img {
+    align-content: start;
+}
+
+a, button {
+    display: block;
+    margin: auto;
+    text-decoration: none;
+}
+

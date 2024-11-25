@@ -37,11 +37,13 @@ header{
     text-align: right;
 }
 
-.menu a{
+.menu a {
     color: black;
     text-decoration: none;
     font-weight: bold;
-    margin-right: 15px;
+    margin: 0 10px;
+    display: inline-block;
+    padding: 5px;
 }
 
 .menu a:hover{
@@ -51,7 +53,6 @@ header{
 section.sobre{
     height: calc(100% - 200px);
     position: relative;
-
 }
 
 .extras{
@@ -74,7 +75,7 @@ section.sobre{
     display: block;
     width: 30px;
     height: 30px;
-    margin: 20px 0 ;
+    margin: 20px 0;
 }
 
 .texto-sobre{
@@ -82,13 +83,13 @@ section.sobre{
 }
 
 .texto-sobre h1{
-    font-size:45px;
+    font-size: 45px;
 }
 
 .texto-sobre p{
     margin: 20px 0;
     color: black;
-    font-size: 14px ;
+    font-size: 14px;
     font-weight: bold;
     max-width: 800px;
 }
@@ -113,8 +114,7 @@ section.sobre{
 
 #animated{
     opacity: 0;
-    transition: opacity 0.8s ease-in-out; /* Suaviza a aparição */
+    transition: opacity 1s ease-in-out; /* Suaviza a aparição */
     font-size: 24px;
     color: #333;
 }
-
